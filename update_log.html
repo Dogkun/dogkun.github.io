@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <link rel="icon" href="https://cdn-community.codemao.cn/community_frontend/favicon.ico" sizes="16x16">
+    <title>阿狗君同志</title>
+    <meta charset="utf-8">
+    <style>
+        * {
+            box-sizing: border-box !important;
+            outline: 0 !important;
+            color: white;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        body {
+            background-image: linear-gradient(135deg, #81FBB8 10%, #28C76F 100%);
+            cursor: -webkit-image-set(url(data:image/png;base64,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) 2x, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAAEEfUpiAAAAAXNSR0IArs4c6QAAArtJREFUWAntV01rGlEUHWuibcU2TVPTRonJpiL2a1FbaEtpAvobanGnIK4qKQjuhP4GseDWjYuii9CNiyJCN134segiJGlAcKELQWJDFZmeM+0TDRM/ppVuvHCceXfuPXPvfe/dN0qSmmxvb8vn9cvnFWPGFouF/pcHJjIEA/1AoXoTjUZpdfGbyFssFuVAIDDKP0Q34R1DlppuN/D+t+M87Qyy0Wh8VjO6RKVer5cymcyrXq/XUjPahPIxQOMlNQOdmvLf6wxI9SloNVdUKYXb7ZYPDg4+gMgwbYwiQRKcCCedTicdHh4emc3mB9D9EPpxVyWCVqvVgNET4CHwHHADJmCirMDiHnB1ouXCQLUCunq9/gZPrqg+nUK5zN7Rbre7sOVsiLUxhetvEwMJuCmPj4/ZNdYAZR9OyzAgIEmhUJB3d3fts5CMEJAklUrJ8Xicm3zi5hrpAHCUut2uVCqVpEgk8nV9ff1FOBz+AiKmdqEoEfh8PtnpdL6G1X2Ae+AlwFQmikKQTqeTsBQFZOiMbmIKZF8yGo13cbUBM1WfzkL4Js3OgmRx1ViB4XnmLvxvM8FAVrCpe/1+/zSfz7O/XAO4GGduD/CZWXiQbYq2srOzw/O+Xy6X30O/CvALZq6BMAC7CIAdhXC5XHKlUpFrtdrHra2t27AxAnOZJtUARCA2m03OZrMyDt5SMBh0Igi2/+H1g6E2mSobtshQKCQ5HI5H+Jb9dnZ2dpRIJNjteOr/VSBiXlmBO5iCE/RgJZVYLCZ5vd5KMpncR5u9brVa1/7I6g2IyWQy5HK5d36//xMcToGxPVshHfMzmAKPxyM3m82fOAj2YM/efhNgpmaAhyZbNqO8BVA3cqhgrEm4yjc6nc73arW6j/tnHANzW3TgVkRMAdcCM+H/DOr4iUD0gYUsKrCowFwr8AukF+p8blYsTwAAAABJRU5ErkJggg==) 1x) 4 4, auto !important;
+        }
+
+        .text {
+            position: absolute;
+            z-index: 9999999;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        @keyframes remove {
+            100% {
+                opacity: 0;
+            }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            text-shadow: 0 0 20px rgb(0 0 0 / 80%);
+            left: 50%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 12px;
+        }
+
+        #all {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #li:hover{
+            background: #1f6fbe;
+            transition:0.3s
+        }
+
+        #li {
+            background: #55aaff;
+            width: 100%;
+            height: 150px;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 0;
+            list-style: none;
+            overflow: scroll;
+            margin: 0 0 20px 0;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        #d {
+            font-size: 25px;
+            margin: 0 0 10px 0;
+        }
+
+        #c{
+            margin: 0;
+        }
+    </style>
+    <div>
+        <!--js代码--->
+        <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+        <script>
+            function click() {
+                if (event.button == 2) {
+                    var fe = document.getElementById("fe")
+                    fe.innerHTML = "你要代码吗，没门=》"
+                }
+            }
+            document.onmousedown = click
+        </script>
+        <script>
+            new cursoreffects.fairyDustCursor({ colors: ["#ff0000", "#00ff00", "#0000ff"] });
+        </script>
+        <script>
+            window.addEventListener('load', function () {
+                let body = document.body;
+                let content = ["被你发现了QAQ", "李天驰，下一个就是你！", "你可能玩上瘾了", "欢饮来到我的个人主页(*^▽^*)", "∑(っ°Д°;)っ卧槽，被发现了",
+                    "bilibili乾杯 - ( ゜- ゜)つ", "看到这条就去写作业吧！", "全世界无产者团结起来！", "前进，前进，不择手段的前进！", "伟大的列宁导师万岁！", "当敌人称赞你的时候，你大概是做了什么傻事了——列宁", "要推翻暴君！要铲除财阀！彻底消灭寄生虫，无耻走狗！"
+                ] //自定义内容的数组
+                body.addEventListener('click', function (e) {
+                    let x = e.pageX;
+                    let y = e.pageY; //当前坐标
+                    let randContent = Math.ceil(Math.random() * content.length);
+                    let text = new Text(x, y, randContent);
+                    let span = document.createElement('span')
+                    span.style.color = text.getRandom();
+                    text.create(span);
+                    setTimeout(function () {
+                        text.out(span)
+                    }, 1900)
+                })
+
+                function Text(x, y, rand) {
+                    this.x = x;
+                    this.y = y;
+                    this.rand = rand;
+                }
+                Text.prototype.create = function (_this) {
+                    let body = document.body;
+                    _this.innerHTML = content[this.rand - 1];
+                    _this.className = 'text'
+                    _this.style.top = this.y - 20 + 'px'
+                    _this.style.left = this.x - 50 + 'px'
+                    _this.style.animation = 'remove 2s'
+                    body.appendChild(_this);
+                    let i = 0
+                    setInterval(() => {
+                        _this.style.top = this.y - 20 - i + 'px'
+                        i++
+                    }, 10);
+                }
+                Text.prototype.out = function (_this) {
+                    _this.remove()
+                }
+                //设置随机颜色
+                Text.prototype.getRandom = function () {
+                    let allType = '0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f'; //16进制颜色
+                    let allTypeArr = allType.split(','); //通过','分割为数组
+                    let color = '#';
+                    for (var i = 0; i < 6; i++) {
+                        //随机生成一个0-16的数
+                        var random = parseInt(Math.random() * allTypeArr.length);
+                        color += allTypeArr[random];
+                    }
+                    return color; //返回随机生成的颜色
+                }
+            })
+        </script>
+    </div>
+
+<body color="white">
+    <h1 style="text-align: center;">更新日志</h1>
+    <ul id="all">
+        <ul id="li">
+            <p id="d">2022/11/23 12:24</p>
+            <p id="c">加了一个更新日志，谢谢银河本尊。照着你的做的</p>
+        </ul>
+    </ul>
+    <footer>
+        <p id="fe"></p>
+    </footer>
+</body>
