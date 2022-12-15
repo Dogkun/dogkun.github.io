@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <link rel="icon" href="https://cdn-community.codemao.cn/community_frontend/favicon.ico" sizes="16x16">
+    <title>阿狗君同志</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://zhouql.vip/cdn/css/szgotop.css" />
+    <style>
+        * {
+            box-sizing: border-box !important;
+            outline: 0 !important;
+            color: white;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        body {
+            background-image: linear-gradient(135deg, #81FBB8 10%, #28C76F 100%);
+            cursor: -webkit-image-set(url(data:image/png;base64,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) 2x, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAAEEfUpiAAAAAXNSR0IArs4c6QAAArtJREFUWAntV01rGlEUHWuibcU2TVPTRonJpiL2a1FbaEtpAvobanGnIK4qKQjuhP4GseDWjYuii9CNiyJCN134segiJGlAcKELQWJDFZmeM+0TDRM/ppVuvHCceXfuPXPvfe/dN0qSmmxvb8vn9cvnFWPGFouF/pcHJjIEA/1AoXoTjUZpdfGbyFssFuVAIDDKP0Q34R1DlppuN/D+t+M87Qyy0Wh8VjO6RKVer5cymcyrXq/XUjPahPIxQOMlNQOdmvLf6wxI9SloNVdUKYXb7ZYPDg4+gMgwbYwiQRKcCCedTicdHh4emc3mB9D9EPpxVyWCVqvVgNET4CHwHHADJmCirMDiHnB1ouXCQLUCunq9/gZPrqg+nUK5zN7Rbre7sOVsiLUxhetvEwMJuCmPj4/ZNdYAZR9OyzAgIEmhUJB3d3fts5CMEJAklUrJ8Xicm3zi5hrpAHCUut2uVCqVpEgk8nV9ff1FOBz+AiKmdqEoEfh8PtnpdL6G1X2Ae+AlwFQmikKQTqeTsBQFZOiMbmIKZF8yGo13cbUBM1WfzkL4Js3OgmRx1ViB4XnmLvxvM8FAVrCpe/1+/zSfz7O/XAO4GGduD/CZWXiQbYq2srOzw/O+Xy6X30O/CvALZq6BMAC7CIAdhXC5XHKlUpFrtdrHra2t27AxAnOZJtUARCA2m03OZrMyDt5SMBh0Igi2/+H1g6E2mSobtshQKCQ5HI5H+Jb9dnZ2dpRIJNjteOr/VSBiXlmBO5iCE/RgJZVYLCZ5vd5KMpncR5u9brVa1/7I6g2IyWQy5HK5d36//xMcToGxPVshHfMzmAKPxyM3m82fOAj2YM/efhNgpmaAhyZbNqO8BVA3cqhgrEm4yjc6nc73arW6j/tnHANzW3TgVkRMAdcCM+H/DOr4iUD0gYUsKrCowFwr8AukF+p8blYsTwAAAABJRU5ErkJggg==) 1x) 4 4, auto !important;
+        }
+
+        .text {
+            position: absolute;
+            z-index: 9999999;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        @keyframes remove {
+            100% {
+                opacity: 0;
+            }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            text-shadow: 0 0 20px rgb(0 0 0 / 80%);
+            left: 50%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 12px;
+        }
+
+        #all {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #li:hover{
+            background: #1f6fbe;
+            transition:0.3s
+        }
+        
+
+        #li {
+            background: #55aaff;
+            width: 100%;
+            height: 150px;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 0;
+            list-style: none;
+            overflow: scroll;
+            margin: 0 0 20px 0;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        #d {
+            font-size: 25px;
+            margin: 0 0 10px 0;
+        }
+
+        #c{
+            margin: 0;
+        }
+        *{
+            font-family: 腾讯体;
+        }
+        @font-face{
+            font-family:'腾讯体';
+            src:url('./疼逊体.ttf');
+        }
+        a{
+            text-decoration: dashed;
+            color: #fff;
+        }
+    </style>
+    <div>
+        <!--js代码QAQ--->
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        <script src="http://zhouql.vip/cdn/szgotop.js"></script>
+        <script src="http://zhouql.vip/cdn/click1.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        <script src="https://blog-static.cnblogs.com/files/zouwangblog/mouse-click.js"></script>
+    </div>
+
+<body color="white">
+    <a href="./index.html">
+        <h1 style="text-align: center;">更新日志</h1>
+    </a>
+    <ul id="all">
+        <ul id="li">
+            <p id="d">2022/12/15 20:33</p>
+            <P id="c">适配移动端</P>
+            <P id="c">增加一言功能，用了一位大佬的api </P>
+        </ul>
+        <a href="./HFDigits.ttf">
+            <ul id="li">
+                <p id="d">2022/12/11 21:04</p>
+                <p id="c">整改特效</p>
+                <p id="c">时间改用HFDigits字体，戳我下载</p>
+            </ul>
+        </a>
+        <a href="./疼逊体.ttf">
+            <ul id="li">
+                <p id="d">2022/12/11 17:25</p>
+                <p id="c">增加时间显示，改用疼逊体。疼逊体戳这里下载</p>
+                <p id="c">逝一下点击上面的标题，看看发生了什么？</p>
+            </ul>
+        </a>
+        <ul id="li">
+            <p id="d">2022/12/10 14:46</p>
+            <p id="c">1.更换域名</p>
+            <p id="c">2.添加几个链接</p>
+            <p id="c">3.首页添加底部菜单</p>
+        </ul>
+        <ul id="li">
+            <p id="d">2022/11/23 12:24</p>
+            <p id="c">加了一个更新日志，谢谢银河本尊。照着你的做的</p>
+        </ul>
+    </ul>
+    <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas>
+    <div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -900px;"></div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="http://zhouql.vip/cdn/szgotop.js"></script> 
+</body>
